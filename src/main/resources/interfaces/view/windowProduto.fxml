@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="108.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.controllers.ControllerWindowProduto">
+   <children>
+      <Label fx:id="lbInput" layoutX="39.0" layoutY="30.0" text="Input:" />
+      <Label fx:id="lbResult" layoutX="39.0" layoutY="68.0" text="Result:" />
+      <Label fx:id="lbReversed" layoutX="85.0" layoutY="68.0" text="==" />
+      <TextField fx:id="txtInput" layoutX="85.0" layoutY="26.0" promptText="Digite um texto aqui" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="26.0" />
+      <Button fx:id="btnReverse" layoutX="258.0" layoutY="26.0" mnemonicParsing="false" onAction="#reverse" text="Reverse" AnchorPane.rightAnchor="31.0" />
+   </children>
+</AnchorPane>

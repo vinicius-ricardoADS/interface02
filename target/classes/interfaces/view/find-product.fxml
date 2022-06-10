@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.controllers.FindProductController">
+   <children>
+      <TableView fx:id="tableProduct" prefHeight="343.0" prefWidth="600.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="cCode" prefWidth="155.0" text="Code" />
+          <TableColumn fx:id="cName" prefWidth="154.0" text="Name" />
+            <TableColumn fx:id="cPrice" prefWidth="143.0" text="Price" />
+            <TableColumn fx:id="cQuantity" prefWidth="146.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSearch" layoutX="528.0" layoutY="361.0" mnemonicParsing="false" onAction="#findProduct" text="Search" AnchorPane.bottomAnchor="14.0" />
+      <TextField fx:id="txtCode" layoutX="14.0" layoutY="361.0" promptText="Code" AnchorPane.bottomAnchor="14.0" />
+   </children>
+</AnchorPane>
