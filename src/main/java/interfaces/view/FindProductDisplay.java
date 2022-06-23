@@ -13,7 +13,7 @@ import java.util.Objects;
 public class FindProductDisplay {
 
     public void showAndWait() {
-        FXMLLoader loader = new FXMLLoader();
+        final FXMLLoader loader = new FXMLLoader();
         final Pane graph;
         try {
             graph = loader.load(Objects.requireNonNull(WindowTable.class.getResource("find-product.fxml")).openStream());
